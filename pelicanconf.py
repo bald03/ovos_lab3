@@ -1,6 +1,6 @@
 AUTHOR = 'Bariev Dabiil'
 SITENAME = 'BarievPS-31-CV'
-SITEURL = ""
+SITEURL = 'https://bald03.github.io/cv'
 
 PATH = "content"
 
