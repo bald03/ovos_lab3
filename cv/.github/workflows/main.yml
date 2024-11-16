@@ -19,15 +19,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        # uses - указываются сторонние actions (готовые workflow)
+        uses: actions/checkout@v4  # Для доступа к репозиторию
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4 # Установка node js
+        # with - для настройки сторонних actions
         with:
           node-version: "20"
           cache: "npm"
 
       - name: Install dependencies
+        # run - команды, которые мы бы выполнянли в терминале
         run: npm install
 
       - name: Build Gatsby site
