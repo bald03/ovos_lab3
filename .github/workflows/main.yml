@@ -26,7 +26,7 @@ jobs:
       # uses - указываются сторонние actions (готовые workflow)
         uses: actions/checkout@v4
 
-      - name: Install, build, test
+      - name: Install
       # run - команды, которые мы бы выполнянли в терминале
         run: |
           npm install
